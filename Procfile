@@ -1,1 +1,1 @@
-web node vince.js
+worker: node vince.js
