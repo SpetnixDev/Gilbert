@@ -38,7 +38,7 @@ Client.on("ready", () => {
     }
     
     let interval = setInterval (function () {
-            Client.channels.cache.get("857367187077332993").send("!d bump")
+            Client.channels.cache.get("857390966272557077").send("!d bump")
             .catch(console.error); // add error handling here
     }, 300 * 1000);
 });
