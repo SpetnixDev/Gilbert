@@ -39,7 +39,7 @@ Client.on("ready", () => {
         }
     }
     
-    dump.dump(Client);
+    dump.dump(client);
 });
 
 Client.on("messageDelete", message => {
