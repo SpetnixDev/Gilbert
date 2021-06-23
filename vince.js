@@ -36,11 +36,6 @@ Client.on("ready", () => {
             });
         }
     }
-    
-    let interval = setInterval (function () {
-            Client.channels.cache.get("857390966272557077").send("!d bump")
-            .catch(console.error); // add error handling here
-    }, 300 * 1000);
 });
 
 Client.on("messageDelete", message => {
