@@ -4,6 +4,8 @@ const Client = new Discord.Client;
 const fs = require("fs");
 let data = require("./config.json");
 
+let dump = require("./dump.js");
+
 Client.on("ready", () => {
     console.log("Bot connected.");
 
@@ -36,6 +38,8 @@ Client.on("ready", () => {
             });
         }
     }
+    
+    dump.dump(client);
 });
 
 Client.on("messageDelete", message => {
